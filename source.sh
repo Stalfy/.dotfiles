@@ -1,5 +1,5 @@
 #!usr/bin/bash
 
 ## Sources dotfiles.
-. ./.dotfiles/system/.prompt
-. ./.dotfiles/system/.aliases
+. ~/.dotfiles/system/.prompt
+. ~/.dotfiles/system/.aliases
