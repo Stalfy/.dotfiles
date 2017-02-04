@@ -1,5 +1,17 @@
 #!usr/bin/bash
 
-## Sources dotfiles.
-. ~/.dotfiles/system/.prompt
-. ~/.dotfiles/system/.aliases
+## Sources the dotfiles and adds them to bashrc
+
+# Creating links.
+echo "Creating links..."
+ln -sf --target-directory=$HOME $HOME/.dotfiles/system/.prompt
+ln -sf --target-directory=$HOME $HOME/.dotfiles/system/.aliases
+
+## Append dotfiles to end of bashrc.
+echo "Appending dotfiles to .bashrc..."
+cat <<EOT >> ~/.bashrc
+if [ -d ~/.dotfiles ]; then
+  .  ~/.aliases
+  .  ~/.prompt
+fi
+EOT
