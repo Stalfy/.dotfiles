@@ -1,4 +1,4 @@
-nstructions after installing ubuntu 16.04
+Instructions after installing ubuntu 16.04
   <ol>
     <li> Removing the hard block on airplane mode. (This method will leave the LED on but enable wi-fi)
       <ul>
@@ -32,4 +32,5 @@ nstructions after installing ubuntu 16.04
       </ul>
     </li>
   </ol>
+
 
