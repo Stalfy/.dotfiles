@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-DF_PATH="$HOME/.dotfiles"
-
 if ! command -v "vim" > /dev/null; then
     echo "Vim is not installed." 
     echo "Installing Vim"
@@ -17,9 +15,3 @@ if ! [ -n 'which Java' ]; then
 else
   echo "Java OK!"
 fi
-
-echo "°º¤ø,¸¸,ø¤º°°º¤ø,¸,ø¤º°°º¤ø,¸¸,ø¤º°°º¤ø,¸¸,ø¤º°°º¤ø,¸,ø¤º°°º¤ø,¸¸,ø¤º°"
-echo "Adding dotfiles..."
-cd $DF_PATH
-. ./source.sh
-cd $HOME
