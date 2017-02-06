@@ -14,6 +14,5 @@ cat <<EOT >> ~/.bashrc
 if [ -d ~/.dotfiles ]; then
   . ~/.aliases
   . ~/.prompt
-  . ~/.gitconfig
 fi
 EOT
