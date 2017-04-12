@@ -16,6 +16,14 @@ else
   echo "Java OK!"
 fi
 
+if ! command -v "tree" > /dev/null; then
+    echo "tree is not installed." 
+    echo "Installing tree"
+    sudo apt-get install tree
+else
+    echo "tree OK!"
+fi
+
 if ! [ -n 'which atom' ]; then
     echo "Atom is not installed"
     echo "Installing Atom"
