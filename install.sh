@@ -23,13 +23,3 @@ if ! command -v "tree" > /dev/null; then
 else
     echo "tree OK!"
 fi
-
-if ! [ -n 'which atom' ]; then
-    echo "Atom is not installed"
-    echo "Installing Atom"
-    sudo apt-add-repository -y ppa:webupd8team/atom
-    sudo apt update
-    sudo apt -y install atom
-else
-    echo "Atom OK!"
-fi
