@@ -1,0 +1,10 @@
+alias ..="cd ../"
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+alias web="firefox"
+
+alias tree="tree -a -I 'git|.git|build|dist|bin|nbproject|target'"
+
+alias pwr="shutdown now"
+alias slp="systemctl suspend"
