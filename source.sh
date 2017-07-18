@@ -15,8 +15,6 @@ cat <<EOT >> ~/.bashrc
 if [ -d ~/.dotfiles ]; then
   . ~/.aliases
   . ~/.prompt
-  . ~/.vimrc
-  . ~/.gitconfig
 fi
 
 fortune
