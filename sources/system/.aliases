@@ -6,6 +6,6 @@ alias ff="firefox www.youtube.com www.facebook.com"
 
 alias tree="tree -a -I 'git|.git|build|dist|bin|nbproject|target'"
 
-alias pwr="shutdown now"
+alias pwr="sudo shutdown now"
 alias slp="systemctl suspend"
 alias clr="clear"
