@@ -46,6 +46,13 @@ if ! command -v "tree" > /dev/null; then
 else
     echo "Tree OK!"
 fi
+
+if ! [ -n 'which pylint3' ]; then
+  echo "Installing pylint3."
+  sudo apt-get -y install pylint3
+else
+  echo "Pylint3 OK!"
+fi
 #! Tools
 
 # Others
