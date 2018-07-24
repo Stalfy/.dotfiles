@@ -1,11 +1,16 @@
+" Settings
 set relativenumber
 set number
+set expandtab 
+set tabstop=4
+set shiftwidth=4
+
 
 autocmd! VimEnter * colorscheme 0x7A69_dark
 
-let g:ale_open_list=1
-let g:ale_list_window_size=3
-let g:ale_python_pylint_executable="pylint3"
+" let g:ale_open_list=1
+" let g:ale_list_window_size=3
+" let g:ale_python_pylint_executable="pylint3"
 
 " Plugins
 call plug#begin('~/.vim/addons')
