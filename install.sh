@@ -17,16 +17,19 @@ else
     echo "Vim OK!"
 fi
 
-if [ -d "$HOME/.vim" ]; then
-   if [ ! -d "$HOME/.vim/autoload" ]; then
-        echo "Installing plug-vim."
-        mkdir $HOME/.vim/addons
-        mkdir $HOME/.vim/autoload 
-        curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    else
-        echo "Plug-vim OK!"
-    fi
+if [ ! -d "$HOME/.vim" ]; then
+    mkdir $HOME/.vim
 fi
+
+if [ ! -d "$HOME/.vim/autoload" ]; then
+    echo "Installing plug-vim."
+    mkdir $HOME/.vim/addons
+    mkdir $HOME/.vim/autoload 
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+else
+    echo "Plug-vim OK!"
+fi
+
 #! Vim
 
 # Programming Languages
