@@ -5,26 +5,27 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+autocmd! VimEnter * colorscheme radicalgoodspeed
 
-autocmd! VimEnter * colorscheme 0x7A69_dark
-
-" let g:ale_open_list=1
-" let g:ale_list_window_size=3
-" let g:ale_python_pylint_executable="pylint3"
+let g:ale_open_list=1
+let g:ale_list_window_size=3
+let g:ale_python_pylint_executable="pylint3"
+let g:ale_linters = {'python': ['pylint']}
 
 " Plugins
 call plug#begin('~/.vim/addons')
-  " Lint
+
+" Lint
 Plug 'https://github.com/w0rp/ale.git'
 
-  " Status
+" Status
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 
-  " ColorScheme
+" ColorScheme
 Plug 'https://github.com/flazz/vim-colorschemes.git'
 
-  " Use
+" Use
 Plug 'https://github.com/Abdulwahaab710/vim-use.git'
 
 call plug#end()
