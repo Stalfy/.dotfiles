@@ -32,29 +32,12 @@ fi
 
 #! Vim
 
-# Programming Languages
-if ! [ -n 'which Java' ]; then
-  echo "Installing Java."
-  sudo apt -y install latest-jre
-  sudo apt -y install latest-jdk
-else
-  echo "Java OK!"
-fi
-#! Programming languages
-
 # Tools
 if ! command -v "tree" > /dev/null; then
     echo "Installing tree"
     sudo apt -y install tree
 else
     echo "Tree OK!"
-fi
-
-if ! [ -n 'which pylint3' ]; then
-  echo "Installing pylint3."
-  sudo apt -y install pylint3
-else
-  echo "Pylint3 OK!"
 fi
 #! Tools
 

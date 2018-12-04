@@ -5,7 +5,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-autocmd! VimEnter * colorscheme radicalgoodspeed
+autocmd! VimEnter * colorscheme burnttoast256
 
 let g:ale_open_list=1
 let g:ale_list_window_size=3
