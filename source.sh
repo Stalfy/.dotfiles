@@ -13,7 +13,9 @@ ln -sf --target-directory=$HOME $HOME/.dotfiles/sources/vim/.vimrc
 ## Append dotfiles to end of bashrc.
 echo "Appending dotfiles to .bashrc..."
 cat <<EOT >> ~/.bashrc
+
 if [ -d ~/.dotfiles ]; then
+  eval $(thefuck --alias)
   . ~/.aliases
   . ~/.prompt
 fi

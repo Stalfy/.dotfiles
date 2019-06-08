@@ -39,6 +39,14 @@ if ! command -v "tree" > /dev/null; then
 else
     echo "Tree OK!"
 fi
+
+if ! command -v "fuck" > /dev/null; then
+    echo "Installing fuck"
+    sudo apt -y install python3-dev python3-pip python3-setuptools
+    sudo pip3 install thefuck
+else
+    echo "Fuck OK!"
+fi
 #! Tools
 
 # Others
