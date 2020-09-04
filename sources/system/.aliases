@@ -4,9 +4,6 @@ alias ....="cd ../../.."
 
 alias ff="firefox www.youtube.com www.facebook.com"
 
-alias jTree="tree -a -I 'git|.git|build|dist|bin|nbproject|target'"
-alias pyTree="tree -a -I 'git|.git|__pycache__'"
-
 alias pwr="sudo shutdown now"
 alias slp="systemctl suspend"
 alias clr="clear"
